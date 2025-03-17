@@ -28,6 +28,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+     # Custom Apps
+    'users',
+    'courses',
+    'assessments',
+    'progress',
 ]
 
 MIDDLEWARE = [
@@ -94,3 +100,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Allowed Host
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
+AUTH_USER_MODEL = 'users.CustomUser'
+
